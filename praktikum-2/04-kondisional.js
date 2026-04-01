@@ -55,15 +55,12 @@ if (bulan == 12 || bulan == 1 || bulan == 2) {
 }
 
 console.log("\n=== Cek Cuaca ===");
-const adaAwan = false;
-const adaAngin = false;
+const adaAwan = true;
+const adaAngin = true;
 
-if (adaAwan && adaAngin) {
-  console.log("Cuaca: Mendung dan Berangin");
-} else if (adaAwan && !adaAngin) {
-  console.log("Cuaca: Mendung");
-} else if (!adaAwan && adaAngin) {
-  console.log("Cuaca: Berangin");
+if (adaAwan || adaAngin) {
+  console.log(adaAwan && adaAngin ? "Mendung dan Berangin" : adaAwan ? "Mendung" : "Berangin");
 } else {
   console.log("Cuaca: Cerah");
 }
+
