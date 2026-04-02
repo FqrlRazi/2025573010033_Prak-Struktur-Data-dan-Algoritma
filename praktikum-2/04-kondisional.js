@@ -42,17 +42,14 @@ console.log(`Nilai ${nilaiAkhir}: ${statusLulus}`);
 console.log("\n=== Cek Musim ===");
 const bulan = 4;
 
-if (bulan == 12 || bulan == 1 || bulan == 2) {
-  console.log("Musim: Musim Dingin");
-} else if (bulan == 3 || bulan == 4 || bulan == 5) {
-  console.log("Musim: Musim Semi");
-} else if (bulan == 6 || bulan == 7 || bulan == 8) {
-  console.log()("Musim: Musim Panas");
-} else if (bulan == 9 || bulan == 10 || bulan == 11) {
-  console.log("Musim: Musim Gugur");
-} else {
-  console.log("Bulan tidak valid");
-}
+let musim =
+  [12,1,2].includes(bulan) ? "Musim Dingin" :
+  [3,4,5].includes(bulan) ? "Musim Semi" :
+  [6,7,8].includes(bulan) ? "Musim Panas" :
+  [9,10,11].includes(bulan) ? "Musim Gugur" :
+  "Bulan tidak valid";
+
+console.log(musim);
 
 console.log("\n=== Cek Cuaca ===");
 const adaAwan = true;
