@@ -3,20 +3,24 @@ const tinggiBadan = 1.9;
 
 BMI = beratBadan / (tinggiBadan * tinggiBadan);
 
-if (BMI < 18.50) {
+if (BMI < 18.5) {
   console.log(
-    `Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} | BMI: ${BMI.toFixed(2)} | Kategori: Kekurangan Berat Badan`,
+    `Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} 
+    | BMI: ${BMI.toFixed(2)} | Kategori: Kekurangan Berat Badan`,
   );
-} else if (BMI >= 18.50 && BMI <= 24.99) {
+} else if (BMI >= 18.5 && BMI <= 24.99) {
   console.log(
-    `Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} | BMI: ${BMI.toFixed(2)} | Kategori: Berat Badan Normal`,
+    `Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} 
+    | BMI: ${BMI.toFixed(2)} | Kategori: Berat Badan Normal`,
   );
-} else if (BMI >= 25.00 && BMI <= 29.99) {
+} else if (BMI >= 25.0 && BMI <= 29.99) {
   console.log(
-    `Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} | BMI: ${BMI.toFixed(2)} | Kategori: Berlebihan Berat Badan`,
+    `Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} 
+    | BMI: ${BMI.toFixed(2)} | Kategori: Berlebihan Berat Badan`,
   );
 } else {
   console.log(
-    `Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} | BMI: ${BMI.toFixed(2)} | Kategori: Obesitas`,
+    `Berat: ${beratBadan} kg | Tinggi: ${tinggiBadan} 
+    | BMI: ${BMI.toFixed(2)} | Kategori: Obesitas`,
   );
 }
