@@ -58,4 +58,4 @@ for (let num = 2; num <= 50; num++) {
     process.stdout.write(num + " "); // cetak bilangan prima di baris yang sama
   }
 }
-console.log(""); // pindah baris setelah selesai mencetak bilangan prima
+console.log(""); // pindah baris setelah selesai mencetak bilangan primaa
