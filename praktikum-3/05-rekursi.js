@@ -29,7 +29,7 @@ function jumlahArray(arr, indeks = 0) {
 // Base case: sudah sampai akhir array
 if (indeks === arr.length) return 0;
 // Recursive case: elemen saat ini + jumlah sisa array
-return arr[indeks] + jumlahArray(arr, indeks + 1);
+return arr[indreeks] + jumlahArray(arr, indeks + 1);
 }
 const angka = [3, 7, 2, 9, 5];
 console.log('\n=== Jumlah Array dengan Rekursi ===');

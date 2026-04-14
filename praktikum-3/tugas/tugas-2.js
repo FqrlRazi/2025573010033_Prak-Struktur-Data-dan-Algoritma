@@ -37,7 +37,7 @@ function cekPalindrom(str) {
 
 console.log("\n=== Uji Cek Palindrom ===");
 
-const kataUji = ["katak", "civic", "level", "halo"];
+const kataUji = ["katak", "civic", "level", "halo", "kasur"];
 
 kataUji.forEach((kata) => {
   if (cekPalindrom(kata)) {
