@@ -1,0 +1,12 @@
+{
+  "name": "2025573010033_prak-struktur-data-dan-algoritma",
+  "version": "1.0.0",
+  "description": "This is my repository for doing task workshop data structure and algorithm at PNL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
