@@ -40,13 +40,19 @@ function bubbleSortNaif(arr) {
       if (a[j] > a[j + 1]) [a[j], a[j + 1]] = [a[j + 1], a[j]];
   return a;
 }
+
+function fibRekursif(n) {
+  if (n <= 1) return n;
+  return fibRekursif(n - 1) + fibRekursif(n - 2); // dua panggilan rekursif!
+}
+
 console.log("=== O(1) — selalu cepat ===");
 console.log(ambilPertama([10, 20, 30, 40, 50]));
 console.log(isGenap(42));
 
 console.log("\n=== O(log n) — Binary Search ===");
 const sorted = Array.from({ length: 1_000_000 }, (_, i) => i);
-binarySearch(sorted, 731_452); 
+binarySearch(sorted, 731_452);
 console.log("\n=== O(n) — Linear Search ===");
 console.log(
   "Max dari 1000 elemen:",
